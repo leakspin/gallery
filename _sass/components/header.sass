@@ -2,12 +2,16 @@
     display: flex
     margin: 0 auto
     align-items: center
+    flex-wrap: wrap
 
     > .title
         width: 50%
         padding: 10px 13px
         background: black
         color: white
+
+        @media #{$below}
+            width: 100%
 
         *
             display: inline
@@ -41,6 +45,9 @@
     > .menu
         width: 50%
         text-align: right
+
+        @media #{$below}
+            width: 100%
 
         > ul
             display: flex
