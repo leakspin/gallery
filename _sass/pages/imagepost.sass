@@ -1,0 +1,54 @@
+.imagepost
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    overflow: hidden
+
+    @media #{$below}
+        flex-wrap: wrap
+
+    > .image
+        display: flex
+        flex-wrap: wrap
+
+        @media #{$below}
+            display: block
+
+        a
+            width: 25%
+            height: 250px
+            text-align: center
+
+            img
+                height: 250px
+
+    > .metadata
+        width: 100%
+
+        > .info
+            margin: 20px
+            padding: 15px
+            background: rgba(0,0,0,0.75)
+            color: $gama
+            border-radius: 4px
+
+            > .title
+                color: $gama
+                margin-top: 0
+                text-align: center
+
+            p
+                color: $gama
+                margin-bottom: 0
+
+            > .date
+                color: $gama
+                font-weight: 300
+                font-size: 1.4rem
+                text-transform: uppercase
+                text-align: center
+                display: block
+                letter-spacing: 1px
+                -webkit-font-smoothing: antialiased
+                text-rendering: optimizeLegibility

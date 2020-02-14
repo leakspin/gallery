@@ -1,0 +1,44 @@
+---
+layout: page
+---
+
+<div class="imagepost">
+    <div class="metadata">
+        <div class="info">
+            <h1 class="title">{{ page.title }}</h1>
+
+            <span class="date">
+                <time datetime="{{ page.date | date:"%d-%m-%Y" }}">{{ page.date | date: "%A. %B %d, %Y" }}</time>
+                {% if site.read-time %} - {% include read-time.html %}{% endif %}
+            </span>
+
+            {{content}}
+
+            {% include pagination.html %}
+        </div>
+    </div>
+    <div id="gallery" class="image">
+    {% if page.image %}
+        <a href="/images/raw/{{ page.image }}">
+            <img src="/images/thumbs/{{ page.image }}" />
+        </a>
+    {% else %}
+        {% for image in page.images %}
+            <a href="/images/raw/{{ image }}">
+                <img src="/images/thumbs/{{ image }}" />
+            </a>
+        {% endfor %}
+    {% endif %}
+    </div>
+</div>
+
+<link rel="stylesheet" href="/css/lightgallery.min.css">
+<link rel="stylesheet" href="/css/lg-transitions.min.css">
+<script src="/js/lightgallery.min.js"></script>
+<script src="/js/lg-thumbnail.min.js"></script>
+<script src="/js/lg-fullscreen.min.js"></script>
+<script>
+    lightGallery(document.getElementById('gallery'), {
+        animateThumb: true
+    }); 
+</script>

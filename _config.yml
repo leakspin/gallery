@@ -1,0 +1,30 @@
+# Basic Info
+name: Adrián Mora Gallery
+title: A journey through the trips of Adrián Mora
+bio: Adrián Mora has a click for photography. Even though he uses most of his free time to not to edit and select the photos he takes.
+description: Photos and videos from trips.
+url: https://gallery.adrianmora.me
+logo: /images/favicon/favicon-196x196.png
+
+analytics-google: UA-108062404-3
+
+# Socials
+twitter:
+  username: leakspin_
+  card: summary
+twitch: leakspin
+github: leakspin
+
+social:
+  name: Leakspin
+  links:
+    - https://twitter.com/leakspin_
+    - https://github.com/leakspin
+
+exclude: 
+  - "*.sh"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jemoji

@@ -1,0 +1,91 @@
+.header-home
+    display: flex
+    margin: 0 auto
+    align-items: center
+
+    > .title
+        width: 50%
+        padding: 10px 13px
+        background: black
+        color: white
+
+        *
+            display: inline
+            margin: 0
+
+            @media #{$below}
+                display: block
+
+        a
+            color: white
+            text-decoration: none
+
+            &:hover
+                border-bottom: 1px solid $gama
+
+        .name
+            font-size: 3rem
+            margin-right: 10px
+            color: white
+
+        .description
+            font-size: 1.85rem
+            font-weight: 300
+            font-style: normal
+            color: $gama
+            width: 70%
+
+            @media #{$below}
+                width: 100%
+
+    > .menu
+        width: 50%
+        text-align: right
+
+        > ul
+            display: flex
+            align-items: center
+            justify-content: end
+
+            @media #{$below}
+                flex-wrap: wrap
+
+            > li
+                font-size: 1.85rem
+                font-weight: 300
+                font-style: normal
+                list-style: none
+                text-align: center
+
+                @media #{$below}
+                    width: 100%
+
+                > a
+                    color: $gama
+                    text-decoration: none
+                    margin: 0 7px
+
+                    &:hover
+                        color: white
+                        text-decoration: underline
+
+                    &.button
+                        background: #6441A4
+                        padding: 5px 10px
+                        border-radius: 4px
+                        color: white
+                        display: flex
+                        align-items: center
+                        justify-content: center
+
+                        &:hover
+                            text-decoration: none
+
+                        > p
+                            color: white
+                            margin: 0
+
+                    > .menu-icon
+                        width: 1.85rem
+                        margin-right: 10px
+                        border-radius: 0px
