@@ -13,12 +13,15 @@
         flex-wrap: wrap
 
         @media #{$below}
-            display: block
+            flex-direction: column
 
         a
             width: 25%
             height: 250px
             text-align: center
+
+            @media #{$below}
+                width: 100%
 
             img
                 height: 250px
