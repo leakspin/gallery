@@ -14,10 +14,12 @@ twitter:
   card: summary
 twitch: leakspin
 github: leakspin
+site: https://adrianmora.me
 
 social:
   name: Leakspin
   links:
+    - https://adrianmora.me
     - https://twitter.com/leakspin_
     - https://github.com/leakspin
 
